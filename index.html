@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfólio Web</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="img/perfil.avif" alt="Foto de perfil" class="foto-perfil">
+
+    <h1>João Silva</h1>
+    <p>Aprendendo Desenvolvimento Web</p>
+
+    <div class="botoes-redes">
+      <a href="#" class="btn instagram">Instagram</a>
+      <a href="#" class="btn linkedin">LinkedIn</a>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- SOBRE -->
+    <section class="secao azul">
+      <h2>Sobre mim</h2>
+      <p id="textoSobre">
+        Sou iniciante em programação e estou criando meu primeiro site.
+      </p>
+      <button onclick="mudarTexto()">Clique para saber mais</button>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="secao verde">
+      <h2>Habilidades</h2>
+
+      <div class="cards">
+
+        <div class="card html tooltip">
+          HTML
+          <span class="tooltip-text">
+            HTML cria a estrutura do site.<br>
+            Textos, títulos e imagens.
+          </span>
+        </div>
+
+        <div class="card css tooltip">
+          CSS
+          <span class="tooltip-text">
+            CSS deixa o site bonito.<br>
+            Cores, tamanhos e layout.
+          </span>
+        </div>
+
+        <div class="card js tooltip">
+          JavaScript
+          <span class="tooltip-text">
+            JavaScript cria interação.<br>
+            Cliques e ações.
+          </span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="secao roxo">
+      <h2>Projetos</h2>
+
+      <div class="cards">
+        <div class="card projeto" onclick="clicouProjeto(1)">
+          <h3>Projeto 1</h3>
+          <p>Primeira página HTML</p>
+        </div>
+
+        <div class="card projeto" onclick="clicouProjeto(2)">
+          <h3>Projeto 2</h3>
+          <p>Estilizando com CSS</p>
+        </div>
+
+        <div class="card projeto" onclick="clicouProjeto(3)">
+          <h3>Projeto 3</h3>
+          <p>Interação com JavaScript</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="secao laranja">
+      <h2>Contato</h2>
+      <p>Email: joao@email.com</p>
+      <p>Cidade: Recife - PE</p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 João Silva. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
